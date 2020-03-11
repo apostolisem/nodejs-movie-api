@@ -7,6 +7,7 @@ try {
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
+const serverPort = process.env.SERVER_PORT || 3000;
 
 mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection;
@@ -19,4 +20,4 @@ app.use(express.json())
 const moviesRoutes = require('./routes/movies');
 app.use('/movies', moviesRoutes);
 
-app.listen(3000, () => console.log('Server Started'));
+app.listen(serverPort, () => console.log('Server Started'));

@@ -6,7 +6,7 @@ GET http://localhost:3000/movies/5e67f5eeba7c2052984a4300
 
 ###
 
-DELETE http://localhost:3000/movies/5e68bfe1f2cdc12b4c2b5eb9
+DELETE http://localhost:3000/movies/5e68cb4e8a6e3b47ec6a022d
 
 ###
 
@@ -24,15 +24,15 @@ POST http://localhost:3000/movies
 Content-Type: application/json
 
 {    
-    "name": "Batman",
-    "moviePosterUrl": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/3b162218290561.562c7079a41fd.jpg",
-    "movieID": "1",
-    "movieYear": "1989",
-    "imdbID": "tt0096895",
-    "imdbRate": "7.5",
-    "trailerUrl": "https://www.youtube.com/watch?v=dgC9Q0uhX70",
-    "movieGenre": ["Action", "Adventure"],
-    "movieDuration": "126",
-    "movieDescription": "The Dark Knight of Gotham City begins his war on crime with his first major enemy being Jack Napier, a criminal who becomes the clownishly homicidal Joker.",
-    "movieActors": ["Michael Keaton", "Jack Nicholson", "Kim Basinger"]
+    "name": "Back to the Future",
+    "moviePosterUrl": "https://static.posters.cz/image/750/poster/back-to-the-future-i2795.jpg",
+    "movieID": "3",
+    "movieYear": "1985",
+    "imdbID": "tt0088763",
+    "imdbRate": "8.5",
+    "trailerUrl": "https://www.youtube.com/watch?v=qvsgGtivCgs",
+    "movieGenre": ["Sci-Fi", "Adventure", "Comedy"],
+    "movieDuration": "116",
+    "movieDescription": "Marty McFly, a 17-year-old high school student, is accidentally sent thirty years into the past in a time-traveling DeLorean invented by his close friend, the eccentric scientist Doc Brown.",
+    "movieActors": ["Michael J. Fox", "Christopher Lloyd", "Lea Thompson"]
 }
