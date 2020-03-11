@@ -9,6 +9,14 @@ const movieSchema = new mongoose.Schema({
         type: Number,
         required: true
     },
+    movieID: {
+        type: Number,
+        required: true
+    },
+    moviePosterUrl: {
+        type: String,
+        required: true
+    },
     imdbID: {
         type: String,
         required: false

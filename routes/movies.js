@@ -28,7 +28,9 @@ router.post('/', async (req, res) => {
         movieGenre: req.body.movieGenre,
         movieDuration: req.body.movieDuration,
         movieDescription: req.body.movieDescription,
-        movieActors: req.body.movieActors
+        movieActors: req.body.movieActors,
+        moviePosterUrl: req.body.moviePosterUrl,
+        movieID: req.body.movieID
     });
     try {
         const newMovie = await movie.save();
@@ -68,7 +70,12 @@ router.patch('/:id', getMovie, async (req, res) => {
     if (req.body.movieActors != null) {
         res.movie.movieActors = req.body.movieActors;
     }
-    
+    if (req.body.movieID != null) {
+        res.movie.movieID = req.body.movieID;
+    }
+    if (req.body.moviePosterUrl != null) {
+        res.movie.moviePosterUrl = req.body.moviePosterUrl;
+    }
       const updatedMovie = await res.movie.save();
       res.json(updatedMovie);
     } catch (err) {
